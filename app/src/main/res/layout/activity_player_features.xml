@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerFeaturesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPlayerFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    <com.stepstone.stepper.StepperLayout
+        android:id="@+id/stepperLayoutPlayerFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:ms_backButtonColor="@color/white"
+        app:ms_completeButtonColor="@color/white"
+        app:ms_nextButtonColor="@color/white"
+        app:ms_completeButtonText="Tamamlandı"
+        app:ms_activeStepColor="@color/secondaryDark"
+        app:ms_nextButtonText="İleri"
+        app:ms_backButtonText="Geri"
+        app:ms_showBackButtonOnFirstStep="false"
+        app:ms_bottomNavigationBackground="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPlayerFeatures"
+        app:ms_stepperType="dots" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPlayerFeatures"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

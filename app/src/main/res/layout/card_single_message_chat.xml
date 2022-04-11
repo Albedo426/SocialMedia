@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Reciverer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        app:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/ReciverImage"
+                android:layout_width="45dp"
+                android:layout_height="39dp"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/LinReciver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/message_reciver_text_style"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/videoViewReciver"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:minHeight="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/imageViewReciver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ReciverText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|fill_vertical"
+                    android:padding="10dp"
+                    android:text="yükleniyor.."
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Senderer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="horizontal"
+
+            android:padding="0dp">
+
+            <LinearLayout
+                android:id="@+id/LinSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/message_send_text_style"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/videoViewSender"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:minHeight="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageViewSender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/SerderText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|fill_vertical"
+                    android:padding="10dp"
+                    android:text="yükleniyor.."
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/SerderImage"
+                android:layout_width="45dp"
+                android:layout_height="39dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
