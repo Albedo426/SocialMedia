@@ -1,15 +1,14 @@
 plugins {
     id 'com.android.application'
-    id 'com.google.gms.google-services'
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.andoridpushnotficaton5java"
+        applicationId "com.example.mainprojecttez"
         minSdk 21
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -27,10 +26,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -52,6 +48,4 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-    implementation 'com.github.markushi:circlebutton:1.1'
 }
